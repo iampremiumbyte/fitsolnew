@@ -1,9 +1,9 @@
 .container {
-    background-image: url("/Background fragmented-01.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 .heroIMG {
     width: 25em;
@@ -27,7 +27,7 @@
 
 .roadmap {
     width: 600px;
-    margin: 4em auto;
+    padding: 4em auto;
 }
 
 

@@ -5,32 +5,40 @@ import React, { useState, useEffect } from 'react';
 
 
 const Timer = () => {
-    const calculateTimeLeft = () => {
-        const difference = +new Date("Thur Mar 28 2024") - +new Date();
-        let timeLeft = {};
+
+  const [timeLeft, setTimeLeft] = useState({});
+
+  const startTimer = () => {
+        // Set the target date to March 27th
+  const targetDate = new Date('March 27, ' + new Date().getFullYear() + ' 12:00:00').getTime();
+
+  // Update the countdown every second
+  const countdownInterval = setInterval(() => {
+      // Get the current time
+      const currentTime = new Date().getTime();
+      
+      // Calculate the time remaining
+      const timeRemaining = targetDate - currentTime;
+      
+      // Check if the countdown has finished
+      if (timeRemaining <= 0) {
+          clearInterval(countdownInterval);
+          console.log("Countdown finished!");
+      } else {
+          let _timeLeft = {};
+          // Calculate days, hours, minutes, and seconds from milliseconds
+          _timeLeft.hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+          _timeLeft.minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+          _timeLeft.seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          setTimeLeft(_timeLeft)
+      }
+  }, 1000); // Update every second
+  }
+
+  useEffect(startTimer,[])
+
     
-        if (difference > 0) {
-          timeLeft = {
-            days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-            hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-            minutes: Math.floor((difference / 1000 / 60) % 60),
-            seconds: Math.floor((difference / 1000) % 60)
-          };
-        }
-    
-        return timeLeft;
-      };
-    
-      const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-    
-    
-      useEffect(() => {
-        const timer = setTimeout(() => {
-          setTimeLeft(calculateTimeLeft());
-        }, 1000);
-    
-        return () => clearTimeout(timer);
-      });
     
   return (
     <section className={styles.countdown}>

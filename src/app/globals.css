@@ -46,6 +46,46 @@ a:hover {
   -webkit-background-clip: text;
 }
 
+.bg1 {
+  background-image: url("/Background fragmented-01.png");
+}
+
+.bg2 {
+  background-image: url("/Background fragmented-02.png");
+}
+
+.bg3 {
+  background-image: url("/Background fragmented-03.png");
+}
+
+.bg4 {
+  background-image: url("/Background fragmented-04.png");
+}
+
+.bg5 {
+  background-image: url("/Background fragmented-05.png");
+}
+
+.bg6 {
+  background-image: url("/Background fragmented-06.png");
+}
+
+.bg7 {
+  background-image: url("/Background fragmented-07.png");
+}
+
+.bg8 {
+  background-image: url("/Background fragmented-08.png");
+}
+
+.bg9 {
+  background-image: url("/Background fragmented-09.png");
+}
+
+.bg10 {
+  background-image: url("/Background fragmented-10.png");
+}
+
 @media screen and (max-width: 1920px) {
   .container {
     width: 1440px;

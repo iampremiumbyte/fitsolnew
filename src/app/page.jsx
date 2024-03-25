@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
     <div className='mt-10'></div>
-      <div className={`${styles.container} mb-5 py-0 sm:mb-20 sm:py-6`}>
+      <div className={`${styles.container} bg1 mb-5 py-0 sm:mb-20 sm:py-6`}>
         <div className='container'>
           <h1 className="text-2xl sm:text-5xl font-bold text-center text-white ">Staying <span className="special-text">Physically Fit</span> in a <span className="special-text">Digital World</span></h1>
           <img alt='mockup' src={"/SolFit base mockup dark.png"} width={300} height={200} className={styles.heroIMG} />
@@ -21,7 +21,7 @@ const page = () => {
       </div>
 
       <div 
-      className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
+      className={`${styles.container} bg2 pt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between flex w-full flex-col sm:flex-row">
         <img alt='mockup' src="/SolFit Dark 1.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white w-full sm:w-1/2'>
@@ -30,7 +30,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
+      <div className={`${styles.container} bg3 pt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between flex w-full flex-col sm:flex-row-reverse">
         <img alt='mockup' src="/SolFit Dark 2.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white items-start w-full sm:w-1/2'>
@@ -39,7 +39,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
+      <div className={`${styles.container} bg4 pt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between flex w-full flex-col sm:flex-row">
         <img alt='mockup' src="/SolFit Dark 3.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white w-full sm:w-1/2'>
@@ -48,7 +48,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
+      <div className={`${styles.container} bg5 pt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between  flex w-full flex-col sm:flex-row-reverse">
         <img alt='mockup' src="/SolFit Dark 5.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white items-start w-full sm:w-1/2'>
@@ -58,7 +58,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
+      <div className={`${styles.container} bg6 pt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between flex w-full flex-col sm:flex-row">
         <img alt='mockup' src="/SolFit Dark 3.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white w-full sm:w-1/2'>
@@ -68,7 +68,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
+      <div className={`${styles.container} bg7 pt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between  flex w-full flex-col sm:flex-row-reverse">
         <img alt='mockup' src="/SolFit Dark 5.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white items-start w-full sm:w-1/2'>
@@ -79,16 +79,16 @@ const page = () => {
       </div>
 
       {/* road map */}
-        <div className={styles.container} id='roadmap'>
+        <div className={`${styles.container} bg8`} id='roadmap'>
           <div className="container">
-          <h3 className='text-white text-xl font-bold text-center sm:text-3xl mt-20 mb-10'>Roadmap</h3>
-          <img width={100} height={100} src='/SolFit Roadmap website no bg.png' className={`${styles.roadmap} m-auto my-10`}/>
+          <h3 className='text-white text-xl font-bold text-center sm:text-3xl pt-20 pb-10'>Roadmap</h3>
+          <img width={100} height={100} src='/SolFit Roadmap website no bg.png' className={`${styles.roadmap} mx-auto py-10`}/>
           </div>
         </div>
 
-      <div className={styles.container} id='application'>
+      <div className={`${styles.container} bg9`} id='application'>
         <div className="container">
-          <h3 className='flex justify-center items-center gap-7 text-white text-xl font-bold text-center sm:text-3xl mt-20 mb-10'>
+          <h3 className='flex justify-center items-center gap-7 text-white text-xl font-bold text-center sm:text-3xl pt-20 mb-10'>
             Try <img width={100} height={100} src='/logo.png' className={styles.smalllogo}/>
           </h3>
           <Timer/>
