@@ -15,7 +15,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 sm:gap-4">
             <Link href={"#application"} className='text-white font-bold text-sm sm:text-xl'>Application</Link>
             <Link href={"#roadmap"} className='text-white font-bold text-sm sm:text-xl'>Roadmap</Link>
-            <Link href={"https://whitepaper.solfit.app/"} className='text-white font-bold text-sm sm:text-xl'>Whiteppaper</Link>
+            <Link href={"https://whitepaper.solfit.app/"} className='text-white font-bold text-sm sm:text-xl'>Whitepaper</Link>
           </div>
         </div>
     </nav>
