@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="container flex items-center justify-between py-5 px-0">
           {/* Logo */}
           <Link href={"/"}>
-          <Image alt='logo' src={"/SolFit logo white no bg.png"} width={100} height={50} className={styles.logo} />
+          <img alt='logo' src={"/SolFit logo white no bg.png"} width={100} height={50} className={styles.logo} />
           </Link>
           {/* Links */}
           <div className="flex items-center gap-2 sm:gap-4">

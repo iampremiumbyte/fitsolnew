@@ -2,12 +2,11 @@
 
 import styles from './styles.module.css'
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 
 const Timer = () => {
     const calculateTimeLeft = () => {
-        const difference = +new Date("Tue Mar 26 2024") - +new Date();
+        const difference = +new Date("Thur Mar 28 2024") - +new Date();
         let timeLeft = {};
     
         if (difference > 0) {

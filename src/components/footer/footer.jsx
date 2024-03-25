@@ -10,13 +10,13 @@ const Footer = () => {
         <p>&copy;  2024 by SolFit</p>
         <div className="flex gap-5">
           <Link href={"https://x.com/solfitcoin"}>
-            <Image src={"/x.png"} width={25} height={20}/>
+            <img src={"/x.png"} width={25} height={20}/>
           </Link>
           <Link href={"https://t.me/solfitcoinportal"}>
-            <Image src={"/telegram.png"} width={25} height={20}/>
+            <img src={"/telegram.png"} width={25} height={20}/>
           </Link>
           <Link href={"https://medium.com/@solanafitcoin"}>
-            <Image src={"/medium.png"} width={25} height={20}/>
+            <img src={"/medium.png"} width={25} height={20}/>
           </Link>
         </div>
       </div>
