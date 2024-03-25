@@ -1,6 +1,8 @@
 .container {
-    background-size: cover;
-    background: transparent;
+    background-image: url("/Background fragmented-01.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .heroIMG {

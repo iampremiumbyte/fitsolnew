@@ -21,9 +21,6 @@ const page = () => {
       </div>
 
       <div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-
       className={`${styles.container} mt-20 py-0 sm:py-6 text-center sm:text-start`}>
         <div className="container items-center justify-between flex w-full flex-col sm:flex-row">
         <Image alt='mockup' src="/SolFit Dark 1.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
@@ -85,26 +82,19 @@ const page = () => {
         <div className={styles.container} id='roadmap'>
           <div className="container">
           <h3 className='text-white text-xl font-bold text-center sm:text-3xl mt-20 mb-10'>Roadmap</h3>
-          <Image width={100} height={100} src='/roadmap.png' className={`${styles.roadmap} m-auto my-10`}/>
+          <Image width={100} height={100} src='/SolFit Roadmap website no bg.png' className={`${styles.roadmap} m-auto my-10`}/>
           </div>
         </div>
 
       <div className={styles.container} id='application'>
         <div className="container">
-          <div className={styles.container}>
           <h3 className='flex justify-center items-center gap-7 text-white text-xl font-bold text-center sm:text-3xl mt-20 mb-10'>
             Try <Image width={100} height={100} src='/logo.png' className={styles.smalllogo}/>
           </h3>
           <Timer/>
-          </div>
-        </div>
-      </div>
-
-      {/* stores */}
-
-      <div className={styles.container}>
-        <div className="container flex justify-center items-center">
+          <div className="container flex justify-center items-center">
           <Image width={400} height={200} className={styles.stores} src="/App stores.png" alt="" />
+        </div>
         </div>
       </div>
       
