@@ -34,7 +34,7 @@ const page = () => {
         <div className="container items-center justify-between flex w-full flex-col sm:flex-row-reverse">
         <img alt='mockup' src="/SolFit Dark 2.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white items-start w-full sm:w-1/2'>
-         <span className="special-text"> Clear overview</span> of your <span className="special-text">activiity</span> and <span className="special-text">rewards</span>
+         <span className="special-text"> Clear overview</span> of your <span className="special-text">activity</span> and <span className="special-text">rewards</span>
         </h2>
         </div>
       </div>
@@ -52,8 +52,7 @@ const page = () => {
         <div className="container items-center justify-between  flex w-full flex-col sm:flex-row-reverse">
         <img alt='mockup' src="/SolFit Dark 5.png" width={200} height={500} className={`${styles.sectionImg} mt-10 sm:mt-0`} />
         <h2 className='text-xl sm:text-3xl font-bold text-white items-start w-full sm:w-1/2'>
-          Easy-to-access
-          <span className="special-text">staking platform</span>
+          Easy-to-access <span className="special-text">staking platform</span>
         </h2>
         </div>
       </div>
