@@ -1,0 +1,11 @@
+.navContainer {
+    background-color: #141518;
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 4em;
+        height: auto;
+    }
+}

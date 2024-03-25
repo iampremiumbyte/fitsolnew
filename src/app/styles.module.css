@@ -1,0 +1,52 @@
+.container {
+    background-size: cover;
+    background: transparent;
+}
+
+.heroIMG {
+    width: 25em;
+    height: auto;
+    margin: 2em auto;
+}
+
+.brandImg {
+    width: 100px;
+    height: auto;
+}
+
+.sectionImg {
+    width: 400px;
+    height: auto;
+}
+
+.smalllogo {
+    width: 3em;
+}
+
+.roadmap {
+    width: 600px;
+    margin: 4em auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .stores {
+        width: 90%;
+        height: auto;
+    }
+
+    .brandImg {
+        width: 60px;
+        height: 25px;
+    }
+
+    .sectionImg {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .roadmap {
+        width: 90%;
+        margin: 2em auto;
+    }
+}

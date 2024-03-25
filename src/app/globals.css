@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Aptly";
+  src: url('/fonts/Aptly/49812.otf') format('opentype'),
+    url('/fonts/Aptly/49813.otf') format('opentype'),
+    url('/fonts/Aptly/49814.otf') format('opentype'),
+    url('/fonts/Aptly/49815.otf') format('opentype'),
+    url('/fonts/Aptly/49816.otf') format('opentype'),
+    url('/fonts/Aptly/49817.otf') format('opentype'),
+    url('/fonts/Aptly/49818.otf') format('opentype'),
+    url('/fonts/Aptly/49819.otf') format('opentype'),
+    url('/fonts/Aptly/49820.otf') format('opentype'),
+    url('/fonts/Aptly/49821.otf') format('opentype'),
+    url('/fonts/Aptly/49822.otf') format('opentype'),
+    url('/fonts/Aptly/49823.otf') format('opentype'),
+    url('/fonts/Aptly/49824.otf') format('opentype'),
+    url('/fonts/Aptly/49825.otf') format('opentype');
+}
+
+body {
+  background-color: #141518;
+  font-family: 'Aptly' !important;
+  /* background-image: url("/Website bg full.png"); */
+  /* background-position: center; */
+}
+
+a:hover {
+  background: linear-gradient(to right, #7a5ea7, #4a8dc4, #42ba87);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: .5s;
+}
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.special-text {
+  background: linear-gradient(to right, #7a5ea7, #4a8dc4, #42ba87);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1366px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+}
