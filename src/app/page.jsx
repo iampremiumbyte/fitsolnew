@@ -79,15 +79,15 @@ const page = () => {
       </div>
 
       {/* road map */}
-        <div className={`${styles.container} bg8`} id='roadmap'>
-          <div className="container">
+        <div className={`${styles.container}`} id='roadmap'>
+          <div className="container bg8">
           <h3 className='text-white text-xl font-bold text-center sm:text-3xl pt-20 pb-10'>Roadmap</h3>
           <img width={100} height={100} src='/SolFit Roadmap website no bg.png' className={`${styles.roadmap} mx-auto py-10`}/>
           </div>
         </div>
 
-      <div className={`${styles.container} bg9`} id='application'>
-        <div className="container">
+      <div className={`${styles.container}`} id='application'>
+        <div className="container bg9">
           <h3 className='flex justify-center items-center gap-7 text-white text-xl font-bold text-center sm:text-3xl pt-20 mb-10'>
             Try <img width={100} height={100} src='/logo.png' className={styles.smalllogo}/>
           </h3>

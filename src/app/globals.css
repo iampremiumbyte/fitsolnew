@@ -76,10 +76,14 @@ a:hover {
 
 .bg8 {
   background-image: url("/Background fragmented-08.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .bg9 {
   background-image: url("/Background fragmented-09.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .bg10 {

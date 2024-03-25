@@ -8,9 +8,11 @@ const Timer = () => {
 
   const [timeLeft, setTimeLeft] = useState({});
 
+  const paddNumber = n => String(n).length !== 1 ? n : "0" + n;
+
   const startTimer = () => {
         // Set the target date to March 27th
-  const targetDate = new Date('March 27, ' + new Date().getFullYear() + ' 12:00:00').getTime();
+  const targetDate = new Date('March 28, ' + new Date().getFullYear() + ' 00:00:00').getTime();
 
   // Update the countdown every second
   const countdownInterval = setInterval(() => {
@@ -27,9 +29,9 @@ const Timer = () => {
       } else {
           let _timeLeft = {};
           // Calculate days, hours, minutes, and seconds from milliseconds
-          _timeLeft.hours = Math.floor(timeRemaining / (1000 * 60 * 60));
-          _timeLeft.minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-          _timeLeft.seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+          _timeLeft.hours = paddNumber(Math.floor(timeRemaining / (1000 * 60 * 60)));
+          _timeLeft.minutes = paddNumber(Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60)));
+          _timeLeft.seconds = paddNumber(Math.floor((timeRemaining % (1000 * 60)) / 1000));
 
           setTimeLeft(_timeLeft)
       }
