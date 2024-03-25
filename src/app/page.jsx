@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react';
 import styles from './styles.module.css'
-import Timer from '../components/timer/Timer';
+import Timer from '@/components/timer/Timer';
 
 const page = () => {
   return (
