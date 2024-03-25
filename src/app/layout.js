@@ -8,7 +8,7 @@ import Footer from "@/components/footer/footer";
 
 export const metadata = {
   title: "Solfit",
-  description: "",
+  description: "Solfit app official website",
 };
 
 export default function RootLayout({ children }) {
